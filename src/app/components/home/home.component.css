@@ -1,0 +1,53 @@
+#container-map{
+
+    margin: 0 auto;
+    width: 80%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#map{
+
+    width: 80%;
+    height: 80%;
+}
+
+.country {
+    fill: #24d9e0;
+    cursor: pointer;
+    stroke: #ffffff;
+}
+
+.country-active{
+    fill: #3258C3;
+}
+.counter{
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+   /*  border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow:0 10px 20px #ccc;*/
+}
+.container-country{
+  
+    display: flex;
+    flex-direction: column;
+}
+.name-country{
+    width: 10%;
+    min-width: 150px;
+    font-size: 2rem;
+}
+.flag-country img{
+    max-width: 100px;
+}

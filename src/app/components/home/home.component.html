@@ -1,0 +1,22 @@
+<div id="container-map">
+    <h1>Coronavirus (COVID-19) map</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" id="map" viewBox="0 0 2000 1001">
+        <path *ngFor="let country of mapCountries" [attr.id]="country.id" [attr.d]="country.shape"
+            [ngClass]="{'country-active': country.id == countryActive?.id }" (click)="selectCountry(country)"
+            class="country" />
+    </svg>
+</div>
+<div *ngIf="countryCovid" class="counter">
+    <app-loading *ngIf="loading"></app-loading>
+    <div class="container-country">
+        <div class="name-country">
+            {{countryCovid.country}}
+        </div>
+        <div class="flag-country">
+            <img [src]="countryCovid.countryInfo.flag" alt="{{countryCovid.country}}">
+        </div>
+    </div>
+    <app-counter number="{{countryCovid.active}}" title="activos"></app-counter>
+    <app-counter number="{{countryCovid.cases}}" title="casos"></app-counter>
+    <app-counter number="{{countryCovid.deaths}}" title="muertos"></app-counter>
+</div>

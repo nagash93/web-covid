@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.number{
+    color: #4D628F;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.title{
+    color: #C2C2C2;
+}

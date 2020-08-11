@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "WebCovid"
+    }
+  },
+  "defaultProject": "WebCovid",
+  "cli": {
+    "analytics": false
+  }
 }
